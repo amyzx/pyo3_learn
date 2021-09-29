@@ -1,0 +1,17 @@
+[package]
+name = "pyo3_learn"
+version = "0.1.0"
+authors = ["star <amyzouxing@outlook.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+# pyo3 library
+[lib] 
+crate-type = ["cdylib", "rlib"]
+ 
+[dependencies.pyo3]
+version = "0.14.1"
+features = ["extension-module"]
